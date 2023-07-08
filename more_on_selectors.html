@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More_on_Selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color:black;
+            font-weight: bold;
+            text-align:center;
+        }
+        /* div p{
+            color:yellow;
+            background-color: green;
+        }
+        div li p{
+            color:brown;
+            background-color: aqua;
+        } */
+        div > p{
+          color:black;
+          background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another paragraph inside li</p></li>
+                <li>This will not get effected</li>
+                <p>This is a para inside ul</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outer most paragraph</p>
+</body>
+</html>

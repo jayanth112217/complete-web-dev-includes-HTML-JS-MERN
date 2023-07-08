@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in javascript</title>
+</head>
+<body>
+    <h1>FUNCTIONS IN JAVASCRIPT</h1>
+    <script>
+        console.log("This is tutorial");
+        // let name="Harry";
+        // let name1="hussain";
+        // let name2="vaibhav";
+        // let name3="sohail";
+        // console.log(name + "is a good boy");
+        // function greet(name){
+        //     console.log(name + "is a bad boy");
+        // }
+        // greet(name);
+        // greet(name1);
+        // greet(name2);
+        // greet(name3);
+        function greet(name,greetText){
+            console.log(greetText + " " + name);
+            console.log(name + " is a good boy");
+        }
+        let name="harry";
+        let name1="subham";
+        let name2="rohan";
+        let name3="sagar";
+        let greetText="Good morning";
+        greet(name,greetText);
+        greet(name1,greetText);
+        greet(name2,greetText);
+        greet(name3,greetText);
+        function sum(a,b,c){
+            let d=a+b+c;
+            return d;
+        }
+        let retrunvalue=sum(100,2002,900);
+        console.log(retrunvalue);
+    </script>
+</body>
+</html>

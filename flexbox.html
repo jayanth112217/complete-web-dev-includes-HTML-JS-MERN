@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox CSS</title>
+    <style>
+        .container{
+            height:344px;
+            width:100%;
+            border:2px solid black;
+            display:flex;
+        }
+        .item{
+            flex-wrap:wrap;
+            background-color: tomato;
+            border:2px solid green;
+            margin:10px;
+            padding:3px;
+        }
+        #item3{
+            flex-wrap:wrap;
+            justify-content: space-around;
+        }
+        #item4{
+            flex-shrink:4;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <h2>This is flex-box tutorial</h2>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item3">Second Box</div>
+        <div class="item" id="item4">Third Box</div>
+        <div class="item" id="item5">Fourth Box</div>
+        <div class="item" id="item6">Fifth Box</div>
+    </div>
+</body>
+</html>

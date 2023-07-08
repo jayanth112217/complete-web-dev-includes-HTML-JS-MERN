@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo Selectors</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            /* background-color: black; */
+            color:white;
+            background: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg");
+        }
+        .navigation{
+            display:flex;
+        }
+        li{
+            list-style: none;
+            padding:34px 23px;
+        }
+        section{
+            height:344px;
+            border:2px solid red;
+            margin:3px 23px;
+           display : flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+        }
+        section::before{
+            content:"This is a content";
+        }
+        h1{
+            font-size : 4rem;
+        }
+        p{
+            text-align : center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="item">Home </li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+        <section>
+            <h1>Welcome to COding World</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem enim, a illo, magnam veniam aspernatur magni blanditiis ratione distinctio soluta maxime quae, aperiam iusto? Maxime qui dignissimos quod reprehenderit harum deserunt est pariatur quasi?</p>
+        </section>
+        <hr>
+    </header>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript SetTimeout and clearTimeout</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+    <script>
+        console.log("This is tutorial-58");
+        // Set Timeout --> Allows us to run the function once after the interval of Timeout
+        // Clear Timeout --> Allows us to run the function repeatedly after the interval of time
+        function greet(name,byetext){
+            console.log("Hello good morning" + name + byetext);
+        }
+        // setTimeout(greet,5000);
+        // setTimeout(greet(),12000);
+        // -->Wrong as it is calling the function Inside setTimeout it will not wait for 12 sec ,fastly it comes
+        // timeout = setTimeout(greet,5000,"Harry","Take Care");
+        // console.log(timeout);
+        // clearTimeout(timeout);
+        // -->Interval
+        IntervalId = setInterval(greet("jhonny","Good ni8"),1000);
+        clearInterval(IntervalId);
+        function displaytime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displaytime,1000);
+    </script>
+</body>
+</html>

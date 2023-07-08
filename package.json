@@ -1,0 +1,23 @@
+{
+  "name": "web-development",
+  "version": "1.0.0",
+  "description": "This is the best package ever built by someone",
+  "main": "tut63.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "awsome"
+  ],
+  "author": "jhonny",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3",
+    "slugify": "~1.3.5"
+  },
+  "devDependencies": {
+    "nodemon": ">2.0.21"
+  }
+}
